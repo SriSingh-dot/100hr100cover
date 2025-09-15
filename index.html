@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History Akhbaar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #808000;
+    }
 
+    #homepage {
+      width: 90%;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 8px solid #bb7373; /* Boundary around the entire page */
+      border-radius: 20px;
+      box-sizing: border-box;
+      background-color: rgba(0,0,0,0.1); /* Slight overlay for contrast */
+    }
+
+    #homepage h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 120px;
+      color: #d69dac;
+      text-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+      margin-bottom: 50px;
+    }
+
+    #homepage button {
+      background-color: black;
+      color: #bb7373;
+      padding: 12px 30px;
+      font-size: 20px;
+      border: 2px solid #be829b;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: 'Brush Script MT', cursive;
+    }
+
+    #homepage button:hover {
+      transform: scale(1.1);
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="homepage">
+    <h1>History Akhbaar</h1>
+    <a href="explore.html">
+      <button><i>Explore</i></button>
+    </a>
+  </div>
+</body>
+</html>

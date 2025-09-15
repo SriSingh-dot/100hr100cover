@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #F5F5DC;
+      color: #808000;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    #explore-container {
+      width: 90%;
+      margin: 50px auto;
+      padding: 40px;
+      border: 5px solid #808000;
+      border-radius: 20px;
+      background-color: #F5F5DC;
+      box-sizing: border-box;
+    }
+
+    .entry {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .entry img {
+      max-width: 220px;
+      width: 100%;
+      border: 5px solid #808000; 
+      border-radius: 10px; 
+    }
+
+    .entry-text {
+      flex: 1;
+    }
+
+    .entry-title {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .entry-description p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px; 
+      text-align: justify;
+    }
+
+    a.back-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #808000;
+      color: #F5F5DC;
+      text-decoration: none;
+      border: 2px solid #808000;
+      border-radius: 12px;
+      font-size: 20px;
+      transition: 0.3s ease;
+      margin-top: 20px;
+    }
+
+    a.back-btn:hover {
+      background-color: #556B2F;
+      border-color: #556B2F;
+    }
+
+    @media (max-width: 900px) {
+      .entry {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .entry img {
+        max-width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .entry-text {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="explore-container">
+
+    <!-- Entry 1: King Tutankhamun -->
+    <div class="entry">
+      <img src="pas1.jpg" alt="King Tutankhamun">
+      <div class="entry-text">
+        <div class="entry-title">1. King Tutankhamun (c. 1341–1323 BCE)</div>
+        <div class="entry-description">
+          <p>
+            King Tutankhamun, commonly known as King Tut, was an Egyptian pharaoh who lived during the 18th dynasty of the New Kingdom. He became king at about nine years old, following the death of his father, Pharaoh Akhenaten, a ruler known for attempting to revolutionize Egyptian religion by promoting the worship of Aten, the sun disk. Tutankhamun inherited a kingdom facing religious turmoil and political instability. Despite his youth, he was guided by powerful advisors and priests who helped him navigate rulership. One of his first acts as pharaoh was to restore the worship of traditional gods and rebuild temples, aiming to stabilize the kingdom.
+          </p>
+          <p>
+            Tutankhamun’s reign lasted about nine or ten years. Little is known about his political achievements, as his rule was largely overshadowed by predecessors. He is credited with initiating restoration projects and reaffirming religious and cultural traditions. Studies suggest he suffered from medical conditions including a clubfoot, malaria, and possible genetic disorders. His death at around eighteen or nineteen remains a mystery, with theories ranging from accident to illness or foul play. Despite this, his historical impact was significant, mostly posthumous.
+          </p>
+          <p>
+            Tutankhamun’s fame comes mainly from the discovery of his nearly intact tomb in 1922 by British archaeologist Howard Carter. Unlike most tombs, which had been looted, it contained treasures including his golden funerary mask, jewelry, chariots, weapons, and furniture, offering a glimpse into ancient Egyptian life and burial practices. These artifacts highlight the craftsmanship, artistry, and religious devotion of the period. Today, King Tutankhamun remains one of the most iconic pharaohs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry 2: Cleopatra VII -->
+    <div class="entry">
+      <img src="pas2.jpg" alt="Cleopatra VII">
+      <div class="entry-text">
+        <div class="entry-title">2. Cleopatra VII (69 BCE – 30 BCE)</div>
+        <div class="entry-description">
+          <p>
+            Cleopatra VII Philopator, last active ruler of Egypt’s Ptolemaic dynasty, is celebrated for her intelligence, charisma, and political skill. Born in Alexandria in 69 BCE, she grew up in a palace filled with intrigue and Greek philosophy. Cleopatra spoke Egyptian fluently, earning the affection of her people and respect from scholars.
+          </p>
+          <p>
+            She co-ruled with her brother Ptolemy XIII and faced exile during their power struggle. To reclaim her throne, she famously had herself smuggled to Julius Caesar inside a carpet. Their alliance produced a son, Caesarion. After Caesar’s assassination, Cleopatra partnered with Mark Antony, forming one of history’s most famous power couples. Their lavish lifestyle was legendary.
+          </p>
+          <p>
+            Octavian, Caesar’s heir, defeated Antony and Cleopatra at the Battle of Actium in 31 BCE. Antony committed suicide, believing Cleopatra dead; Cleopatra followed soon after, reportedly using an asp bite or poison. Her death ended the Ptolemaic dynasty and Egypt’s independence.
+          </p>
+          <p>
+            Cleopatra is remembered as a master strategist, linguist, and ruler who balanced diplomacy, intelligence, and showmanship. Her life remains a symbol of power, wit, and audacity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Entry 3: Ramses II -->
+    <div class="entry">
+      <img src="pas3.jpg" alt="Ramses II">
+      <div class="entry-text">
+        <div class="entry-title">3. Ramses II (1279 – 1213 BCE)</div>
+        <div class="entry-description">
+          <p>
+            Ramses II, or Ramesses the Great, ruled Egypt’s 19th Dynasty for over 60 years. His reign featured monumental achievements, architecture, and self-promotion. Born around 1303 BCE, he was prepared for greatness from an early age. As pharaoh, he ensured his name would echo through eternity, commissioning statues of himself across Egypt.
+          </p>
+          <p>
+            Ramses II led the Battle of Kadesh against the Hittites, a massive chariot battle. While technically a stalemate, he recorded it as a glorious victory, immortalized on temple walls. He was also a prolific builder, creating temples and monuments like Abu Simbel.
+          </p>
+          <p>
+            Ramses had over 100 children with multiple wives and concubines. His chief queen, Nefertari, was honored with a temple at Abu Simbel. His reign marked a golden age of stability and prosperity. He died around 90 years old, and his mummy, discovered in 1881, remains famous worldwide.
+          </p>
+          <p>
+            Ramses II is remembered as a symbol of Egypt’s grandeur. His statues and temples reflect his ambition to outshine predecessors. Even today, his legacy endures as one of Egypt’s greatest pharaohs.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!--baited -->
+
+    <div style="margin-top: 40px; text-align: center; font-size: 22px;">
+  <p>What? History is not interesting and is complicated?</p>
+  <p>Want to have fun? <a href="fun.html" style="color: #556B2F; text-decoration: underline;">Click here!</a></p>
+</div>
+
+
+    <a class="back-btn" href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>

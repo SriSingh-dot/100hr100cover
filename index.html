@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -16,16 +17,18 @@
 
     #homepage {
       width: 90%;
+      max-width: 1200px;
       height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      border: 8px solid #bb7373; /* Boundary around the entire page */
+      border: 8px solid #bb7373;
       border-radius: 20px;
       box-sizing: border-box;
-      background-color: rgba(0,0,0,0.1); /* Slight overlay for contrast */
+      background-color: rgba(0,0,0,0.1);
+      padding: 20px;
     }
 
     #homepage h1 {
@@ -36,11 +39,15 @@
       margin-bottom: 50px;
     }
 
+    #homepage a {
+      text-decoration: none;
+    }
+
     #homepage button {
       background-color: black;
       color: #bb7373;
       padding: 12px 30px;
-      font-size: 20px;
+      font-size: 24px;
       border: 2px solid #be829b;
       border-radius: 12px;
       cursor: pointer;

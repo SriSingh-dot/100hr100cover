@@ -4,210 +4,183 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fun History</title>
-  
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
   <style>
     body {
-      margin: 0;
+      margin:0;
       font-family: Arial, sans-serif;
-      color: white;
+      color:white;
+      background:black;
     }
-
     .background {
-      background: url('wall1.jpg') no-repeat center center fixed;
-      background-size: cover;
-      min-height: 100vh;
-      padding: 40px;
-      position: relative;
+      background:url('wall1.jpg') no-repeat center center fixed;
+      background-size:cover;
+      padding:40px;
+      position:relative;
     }
-
     .background::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 0;
+      content:'';
+      position:absolute;
+      top:0;left:0;right:0;bottom:0;
+      background-color:rgba(0,0,0,0.5);
+      z-index:0;
     }
-
     .content {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 40px;
-      max-width: 1000px;
-      margin-bottom: 80px;
+      position:relative;
+      z-index:1;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:flex-start;
+      gap:40px;
+      max-width:1000px;
+      margin:0 auto 80px;
     }
-
     .text {
-      flex: 1;
-      min-width: 300px;
+      flex:1;
+      min-width:300px;
     }
-
     h1 {
-      font-size: 55px;
-      font-family: 'Playfair Display', serif;
-      text-decoration: underline;
-      text-decoration-color: olive;
-      text-underline-offset: 10px;
-      margin-bottom: 20px;
+      font-size:55px;
+      font-family:'Playfair Display',serif;
+      text-decoration:underline;
+      text-decoration-color:olive;
+      text-underline-offset:10px;
+      margin-bottom:20px;
     }
-
     p {
-      font-size: 20px;
-      line-height: 1.6;
-      margin-bottom: 20px;
+      font-size:20px;
+      line-height:1.6;
+      margin-bottom:20px;
     }
-
     img {
-      max-width: 400px;
-      border: 8px solid olive;
-      border-radius: 15px;
-      flex-shrink: 0;
+      max-width:400px;
+      border:8px solid olive;
+      border-radius:15px;
+      flex-shrink:0;
     }
-
-    @media (max-width: 900px) {
+    .footer-links {
+      text-align:center;
+      margin:60px 0 20px;
+      position:relative;
+      z-index:1;
+    }
+    .footer-links a {
+      display:inline-block;
+      background-color:#2c3e50;
+      color:white;
+      padding:12px 24px;
+      text-decoration:none;
+      font-size:18px;
+      border-radius:8px;
+      margin:10px;
+    }
+    .footer-links a.secondary {
+      background:none;
+      color:white;
+      text-decoration:underline;
+    }
+    @media(max-width:900px){
       .content {
-        flex-direction: column;
-        align-items: center;
+        flex-direction:column!important;
+        align-items:center!important;
+        text-align:center!important;
       }
       img {
-        margin-bottom: 20px;
-      }
-      .text {
-        text-align: center !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-bottom:20px;
       }
     }
   </style>
 </head>
 <body>
-
   <div class="background">
 
+
+
+    <!--All Photos Uploaded-->
+
+    <!-- Great Emu War --><!--photo done-->
     <div class="content">
-      <div class="text" style="text-align: left; margin-right: auto;">
+      <div class="text">
         <h1>The Great Emu War</h1>
-        <p>
-          In 1932, Australia decided to go to war—not with another country, but with emus. Yes, giant, flightless birds. Farmers were tired of emus trampling crops, so the army rolled in with machine guns. Sounds serious, right? Wrong. The emus were fast, clever, and apparently had a better escape plan than most soldiers. Bullets missed, soldiers got frustrated, and the emus strutted off like they owned the place—which, in hindsight, they basically did. After weeks of bird chaos, the army surrendered. Humans lost, emus won, and history got one of its funniest battle stories ever.
-        </p>
+        <p>In 1932, Australia decided to go to war—not with another country, but with emus. Farmers were tired of emus trampling crops, so the army rolled in with machine guns. The emus were fast, clever, and apparently had a better escape plan than most soldiers. Bullets missed, soldiers got frustrated, and the emus strutted off like they owned the place. After weeks of chaos, the army surrendered. Humans lost, emus won, and history got one of its funniest battle stories ever.</p>
         <p>Birds 1 – Humans 0.</p>
       </div>
       <img src="pas4.jpg" alt="Emu">
     </div>
 
-
-<div style="width: 100%; display: flex; justify-content: flex-end; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px; max-width: 800px;">
-    <img src="pas5.jpg" alt="Napoleon and Rabbits" style="max-width: 300px; height: auto;">
-    <div class="text" style="text-align: left;">
-      <h1>Napoleon Was Attacked by Rabbits</h1>
-      <p>
-        Napoleon Bonaparte, conqueror of Europe, once faced an enemy he couldn’t defeat: rabbits. He organized a grand hunting party with his soldiers, expecting a noble chase. Instead, the “ferocious” rabbits, raised as tame farm pets, saw humans and ran straight toward them—like a fluffy army on a mission. Napoleon, dressed in his battle regalia, reportedly tried to command the troops while rabbits swarmed him, hopping over hats and into coats. The fearsome emperor, feared by millions, was no match for cute, determined bunnies. History records a humbling truth: sometimes, the smallest warriors are also the most terrifying.
-      </p>
+    <!-- Napoleon and Rabbits --><!--photo done-->    
+     <div class="content" style="flex-direction:row-reverse;">
+      <div class="text">
+        <h1>Napoleon Was Attacked by Rabbits</h1>
+        <p>Napoleon Bonaparte, conqueror of Europe, once faced an enemy he couldn’t defeat: rabbits. He organized a grand hunting party, expecting a noble chase. Instead, the rabbits—raised as tame pets—ran straight toward the humans like a fluffy army. Napoleon, in full regalia, tried to command order while rabbits swarmed him, hopping into coats and hats. The mighty emperor was undone by bunnies, proving the smallest warriors can be the most terrifying.</p>
+      </div>
+      <img src="pas5.jpg" alt="Napoleon and Rabbits">
     </div>
-  </div>
-</div>
 
-
-
-
-
-<div style="width: 100%; display: flex; justify-content: flex-start; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row-reverse; align-items: flex-start; text-align: left; gap: 20px; max-width: 800px;">
-    <img src="pas6.jpg" alt="Dancing Plague of Strasbourg" style="max-width: 300px; height: auto;">
-    <div class="text">
-      <h1>The Dancing Plague of Strasbourg</h1>
-      <p>
-        In 1518, Strasbourg (now in France) hosted the world’s weirdest dance party—whether anyone wanted it or not. Dozens of people suddenly started dancing uncontrollably in the streets, unable to stop for days. Some danced themselves into exhaustion, and a few even died—talk about overdoing cardio. Historians still debate the cause: mass hysteria, spicy bread, or a mysterious “dancing mania.” Whatever it was, it turns out compulsive dancing can be contagious, terrifying, and exhausting all at once. Imagine showing up to a normal market day and suddenly being forced to twerk like it’s a medieval TikTok challenge.
-      </p>
+    <!-- Dancing Plague --><!--photo done--> 
+      <div class="content">
+      <div class="text">
+        <h1>The Dancing Plague of Strasbourg</h1>
+        <p>In 1518, Strasbourg hosted the world’s weirdest dance party—whether anyone wanted it or not. Dozens began dancing uncontrollably in the streets for days. Some danced themselves into exhaustion, and a few even died—talk about overdoing cardio. Historians debate the cause: mass hysteria, spicy bread, or mysterious “dancing mania.” Whatever it was, imagine going to market and suddenly being forced to twerk like it’s a medieval TikTok challenge.</p>
+      </div>
+      <img src="pas6.jpg" alt="Dancing Plague">
     </div>
-  </div>
-</div>
 
-
-  
-
-
-
-<div style="width: 100%; display: flex; justify-content: flex-end; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row; align-items: flex-start; text-align: left; gap: 20px; max-width: 800px;">
-    <img src="pas7.jpg" alt="Cadaver Synod" style="max-width: 300px; height: auto;">
-    <div class="text">
-      <h1>The Cadaver Synod (897 CE)</h1>
-      <p>
-        In 897 CE, Pope Stephen VI staged what might be history’s weirdest trial: the Cadaver Synod. He dug up the corpse of his predecessor, Pope Formosus, dressed him in papal robes, and put him on trial for alleged crimes. The dead pope, naturally, couldn’t defend himself—though you have to admire his commitment to staying silent. The court found him guilty, proving that even in the Middle Ages, bureaucracy could be absurd. Imagine explaining that case in law school: “Yes, your honor, the defendant is very dead, but we’ve got paperwork.” Truly, history has a flair for the macabre and hilarious.
-      </p>
+    <!-- Cadaver Synod --><!--photo done-->
+    <div class="content" style="flex-direction:row-reverse;">
+      <div class="text">
+        <h1>The Cadaver Synod (897 CE)</h1>
+        <p>In 897 CE, Pope Stephen VI staged what might be history’s weirdest trial: the Cadaver Synod. He dug up Pope Formosus’ corpse, dressed it in papal robes, and put it on trial. The dead pope, of course, stayed silent. The court found him guilty, proving medieval bureaucracy could be absurd. Imagine explaining that in law school: “Yes, your honor, the defendant is very dead, but paperwork demands justice.”</p>
+      </div>
+      <img src="pas7.jpg" alt="Cadaver Synod">
     </div>
-  </div>
-</div>
 
-
-
-<div style="width: 100%; display: flex; justify-content: flex-start; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row-reverse; align-items: flex-start; text-align: left; gap: 20px; max-width: 800px;">
-    <img src="pas8.jpg" alt="Peter the Great Beard Tax" style="max-width: 300px; height: auto;">
-    <div class="text">
-      <h1>Peter the Great’s Beard Tax</h1>
-      <p>
-        Peter the Great of Russia wasn’t just a powerful czar—he was also a fashion police officer. Determined to make his nobles look “modern,” he imposed a beard tax, forcing men to pay coins to keep their facial hair. Refuse, and you were shorn like a sheep. Imagine trying to enjoy your morning coffee while keeping track of how many kopeks you owed for chin fuzz. Barbers must have been ecstatic, and men probably wished they could just hide beards under hats. Peter proved that even in the 18th century, politics could be painfully… hairy.
-      </p>
+    <!-- Pig War --><!--photo done-->
+    <div class="content">
+      <div class="text">
+        <h1>The Pig War</h1>
+        <p>In 1859, the U.S. and Britain nearly went to war over…a pig. On San Juan Island, an American farmer shot a British Hudson’s Bay Company pig caught eating his potatoes. Tempers flared faster than bacon grease pops. Soon, soldiers faced off, cannons waited, and the unlucky hog became the spark of international drama. Cooler heads prevailed; the pig remained the lone casualty—history’s tastiest peace negotiator.</p>
+      </div>
+      <img src="pas9.jpg" alt="The Pig War">
     </div>
-  </div>
-</div>
 
-
-
-<div style="width: 100%; display: flex; justify-content: flex-end; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px; max-width: 800px;">
-    <img src="pas9.jpg" alt="The Pig War" style="max-width: 300px; height: auto;">
-    <div class="text" style="text-align: left;">
-      <h1>The Pig War</h1>
-      <p>In 1859, the U.S and Britain almost went to war over ......a 'pig'.On San Juan Island, an American farmer caught a British Hudon's Bay Company pig snacking on his potatoes ans shot it. Tempers flared fatser that Bacon grease pops. Soon, soldiers from both nation faced off-armed to the teeth-over one lucky hog. Officers argued, connons waited and that poor pig became the squealing spark of International drama. Luckily,cooler heads prevailed; nobody else got roaseted. The one casuality?? The pig, who unintentionally became hitory,s tastiest peace negotiator (By the way i do not eat pig). , proving that sometimes the biggest wars start with something small as a needle.</p>
+    <!-- Molasses Flood --><!-- photo done-->
+    <div class="content" style="flex-direction:row-reverse;">
+      <div class="text">
+        <h1>The Great Molasses Flood (1919)</h1>
+        <p>In 1919 Boston, a massive molasses tank exploded, creating a sticky river of chaos. A 25-foot wave of syrup raced through the streets at nearly 25 mph—fast enough to outrun a horse, slow enough to look hilariously doomed in slow motion. People, carts, and even rats were swept up like toppings in the world’s largest pancake disaster. Firefighters waded knee-deep, probably craving waffles while regretting life choices. Cleanup took weeks, and the city smelled like a rogue candy factory.</p>
+      </div>
+      <img src="pas10.jpg" alt="The Great Molasses Flood">
     </div>
-  </div>
-</div>
 
-<div style="width: 100%; display: flex; justify-content: flex-start; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px; max-width: 800px;">
-    <div class="text" style="text-align: left;">
-      <h1>The Great Molasses Flood (1919)</h1>
-      <p>In 1919 Boston, a massive molasses tank exploded, turning the streets into sticky river of chaos. A 25-foot wave of syrup raced at nearly 25mph -fast enough to outrun a horse, slow enough to make everyone look hilariouly doomed in slow motion.People ,carts,and even rats were swept up like toppings in the world's largest pancake disaster.Firefighters waded knee-deeo, probably craving waffles while regretting every career choice. Cleanup took weeks, and the city smelled like a candy factory gone rogue.</p>
+    <!-- Dancing Goats --><!--photo done-->
+    <div class="content">
+      <div class="text">
+        <h1>Dancing Goats Inspired Coffee</h1>
+        <p>Legend says coffee was discovered by a goat with killer dance moves. In Ethiopia, herder Kaldi noticed his goats bouncing like caffeinated pogo sticks after munching red berries. Curious, he tried them too—boom! Goat groove unlocked. Soon Kaldi was moonwalking across hillsides, inventing espresso energy centuries early. Monks brewed the beans to stay awake during prayers, accidentally creating the first study fuel. Next time you sip a latte, remember: it began with a hyper goat throwing a caffeine rave.</p>
+      </div>
+      <img src="pas11.jpg" alt="Dancing Goats">
     </div>
-    <img src="pas10.jpg" alt="The Great Molasses Flood" style="max-width: 300px; height: auto;">
+
+
+
+
+    <div class="content" style="flex-direction: row-reverse;">
+  <div class="text">
+    <h1>Peter the Great’s Beard Tax</h1>
+    <p>Peter the Great of Russia wasn’t just a powerful czar—he was also a fashion police officer. Determined to make his nobles look “modern,” he imposed a beard tax, forcing men to pay coins to keep their facial hair. Refuse, and you were shorn like a sheep. Imagine trying to enjoy your morning coffee while keeping track of how many kopeks you owed for chin fuzz. Barbers must have been ecstatic, and men probably wished they could just hide beards under hats. Peter proved that even in the 18th century, politics could be painfully… hairy.</p>
   </div>
+  <img src="pas8.jpg" alt="Peter the Great Beard Tax">
 </div>
 
 
 
-
-<div style="width: 100%; display: flex; justify-content: flex-end; margin-top: 40px;">
-  <div class="content" style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px; max-width: 800px;">
-    <img src="pas11.jpg" alt="Dancing Goats Inspired Coffee" style="max-width: 300px; height: auto;">
-    <div class="text" style="text-align: left;">
-      <h1>Dancing Goats Inspired Coffee</h1>
-      <p>Legends says that coffee was discovered by a goat with killer dance moves. In Ethiopia, a herder named Kaldi noticed his goats bouncing like caffeinated pogo sticks after munching red berries.Curious,he tried them too-and boom!! Instead goat groove.Soon Kaldi was practically moonwalking across hillside, inventing "espresso energy" centuries early. Monks nearby brewedthe beans to stay awake during prayers, accidentally creating first late-night study fuel. So next time you sip your fancy latte, remember,it all began with a hyper goat throwing a caffeine rave. Basically, every coffe break is jut you honoring that original goat disco.</p>
+    <!-- Footer -->
+    <div class="footer-links">
+      <a href="pic.html" class="secondary">What? Wanna see more? Click here</a>
+      <a href="index.html">Back to Homepage</a>
     </div>
+
   </div>
-</div>
-
-
-
-
-<div style="width: 100%; display: flex; flex-direction: column; align-items: center; margin: 40px 0;">
-  <p style="font-size: 18px; margin-bottom: 16px;">
-    What? Wanna see more? 
-    <a href="pic.html" style="color: #2c3e50; text-decoration: underline;">Click here</a>
-  </p>
-  <p>
-    <a href="index.html" style="background-color: #2c3e50; color: white; padding: 12px 24px; text-decoration: none; font-size: 18px; border-radius: 8px; display: inline-block;">
-      Back to Homepage
-    </a>
-  </p>
-</div>
-
 </body>
 </html>

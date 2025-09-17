@@ -15,7 +15,9 @@
       height: 100vh;
       color: black;
       margin: 0;
+      flex-direction: column;
     }
+
     .result-box {
       background: rgba(255, 255, 255, 0.85);
       padding: 40px;
@@ -28,11 +30,33 @@
         0 0 0 10px rgba(255, 255, 255, 0.7),
         0 0 0 15px black,
         0 0 20px rgba(0, 0, 0, 0.5);
+      margin-bottom: 30px;
+    }
+
+    .thank-btn {
+      background-color: black;
+      color: white;
+      padding: 15px 35px;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 12px;
+      border: 3px solid olive;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .thank-btn:hover {
+      background-color: olive;
+      color: black;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <div class="result-box" id="result"></div>
+
+  <a href="thank.html" class="thank-btn">Thank You</a>
+
   <script>
     const total = Number(localStorage.getItem('quizScore')) || 0;
     let character = 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('wall4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: black;
+      margin: 0;
+    }
+    .result-box {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 25px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      border: 8px double black;
+      box-shadow:
+        0 0 0 10px rgba(255, 255, 255, 0.7),
+        0 0 0 15px black,
+        0 0 20px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box" id="result"></div>
+  <script>
+    const total = Number(localStorage.getItem('quizScore')) || 0;
+    let character = 
+      total <= 70 ? 'You are the Witty Court Jester!' :
+      total <= 110 ? 'You are the Playful Monarch!' :
+      total <= 150 ? 'You are the Eccentric Emperor!' :
+      'You are the Supreme Prankster King!';
+    document.getElementById('result').innerText = `Your Score: ${total}\n${character}`;
+  </script>
+</body>
+</html>

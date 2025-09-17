@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Ridiculous Ruler Are You?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('wall4.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+      display: flex;
+      justify-content: center;
+    }
+    .page-frame {
+      width: 95%;
+      max-width: 1000px;
+      border: 5px solid black;
+      border-radius: 20px;
+      padding: 20px 30px;
+      margin: 20px 0;
+      background: rgba(255,255,255,0.05);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 80px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .question {
+      padding: 20px;
+      margin: 20px 0;
+      text-align: left;
+    }
+    .question h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .options {
+      margin-left: 20px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    input[type="radio"] {
+      transform: scale(1.4);
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .feedback {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: darkblue;
+    }
+    button {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 30px;
+      font-size: 22px;
+      font-weight: bold;
+      border-radius: 10px;
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-frame">
+    <h1>Personality Quiz</h1>
+
+    <div class="question">
+      <h2>1. How would your friends describe your sense of humor?</h2>
+      <div class="options">
+        <label><input type="radio" name="q1" value="10">Dry and sarcastic</label>
+        <label><input type="radio" name="q1" value="20">Slapstick chaos</label>
+        <label><input type="radio" name="q1" value="30">Witty but dramatic</label>
+        <label><input type="radio" name="q1" value="40">Mischievous and absurd</label>
+      </div>
+      <div class="feedback" id="fb1"></div>
+    </div>
+
+    <div class="question">
+      <h2>2. If you could crash a historical event, where would you go?</h2>
+      <div class="options">
+        <label><input type="radio" name="q2" value="10">Napoleon’s rabbit hunt</label>
+        <label><input type="radio" name="q2" value="20">Boston Tea Party</label>
+        <label><input type="radio" name="q2" value="30">Dancing Plague</label>
+        <label><input type="radio" name="q2" value="40">Royal coronation prank</label>
+      </div>
+      <div class="feedback" id="fb2"></div>
+    </div>
+
+    <div class="question">
+      <h2>3. Pick your ideal historical weapon for a silly duel:</h2>
+      <div class="options">
+        <label><input type="radio" name="q3" value="10">Giant turkey leg</label>
+        <label><input type="radio" name="q3" value="20">Feather quill</label>
+        <label><input type="radio" name="q3" value="30">Custard pie</label>
+        <label><input type="radio" name="q3" value="40">Squeaky toy sword</label>
+      </div>
+      <div class="feedback" id="fb3"></div>
+    </div>
+
+    <div class="question">
+      <h2>4. Which historical art scene matches your vibe?</h2>
+      <div class="options">
+        <label><input type="radio" name="q4" value="10">Dogs Playing Poker</label>
+        <label><input type="radio" name="q4" value="20">The Swing</label>
+        <label><input type="radio" name="q4" value="30">Garden of Earthly Delights</label>
+        <label><input type="radio" name="q4" value="40">Self-Portrait with Monkey</label>
+      </div>
+      <div class="feedback" id="fb4"></div>
+    </div>
+
+    <div class="question">
+      <h2>5. What would your time-travel motto be?</h2>
+      <div class="options">
+        <label><input type="radio" name="q5" value="10">Prank it anyway</label>
+        <label><input type="radio" name="q5" value="20">History needs glitter</label>
+        <label><input type="radio" name="q5" value="30">Jazz hands for Renaissance</label>
+        <label><input type="radio" name="q5" value="40">Oops butterfly effect</label>
+      </div>
+      <div class="feedback" id="fb5"></div>
+    </div>
+
+    <button onclick="goToResult()">See Your Result</button>
+  </div>
+
+  <script>
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+      radio.addEventListener('click', function() {
+        document.getElementById('fb' + this.name.slice(1)).textContent =
+          'You got ' + this.value + ' points';
+      });
+    });
+
+    function goToResult() {
+      let total = 0;
+      for (let i = 1; i <= 5; i++) {
+        const selected = document.querySelector('input[name="q' + i + '"]:checked');
+        if (selected) total += Number(selected.value);
+      }
+      localStorage.setItem('quizScore', total);
+      window.location.href = 'result.html';
+    }
+  </script>
+</body>
+</html>
